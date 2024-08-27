@@ -1,0 +1,28 @@
+export const AlertActivityDummyData = new Array(6).fill(1).map((_, idx) => ({
+  id: idx,
+  sensorcode: 'temp',
+  unit: 'C',
+  value: '14.24',
+  alert: {
+    alertlog: {
+      id: 749170,
+      receivedon: '2024-07-10T07:45:00.822Z',
+      value: 14.24,
+      status: 'on',
+    },
+    id: 247,
+    name: 'alert-energy-meter',
+    sign: -2,
+    value: 30,
+    threatlevel: 2,
+    status: 1,
+    status_email: 0,
+    status_whatsapp: 0,
+    email: null,
+    whatsapp: null,
+    companyId: 39,
+    created_at: '2024-06-14T12:50:30.362Z',
+    updated_at: '2024-06-14T12:58:16.544Z',
+    deleted_at: null,
+  },
+}));

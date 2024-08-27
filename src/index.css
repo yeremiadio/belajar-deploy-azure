@@ -1,0 +1,338 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.pac-container {
+  pointer-events: auto;
+}
+.pac-container:empty {
+  display: none !important;
+}
+.pac-container:after {
+  /* Disclaimer: not needed to show 'powered by Google' if also a Google Map is shown */
+
+  background-image: none !important;
+  height: 0px;
+}
+
+.cutive-mono {
+  font-family: 'Cutive Mono', monospace;
+  font-weight: 400;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 219 40% 11%;
+
+    --radius: 0.5rem;
+
+    --scrollbar-white-color: #fff;
+    --scrollbar-black-color: #000;
+
+    --scrollbar-rs-light-grey-color: #d4d8dd;
+    --scrollbar-rs-grey-color: #778292;
+  }
+
+  /* Firefox */
+  .custome_scroll_y {
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar-black-color);
+  }
+
+  /* Chrome, Edge, and Safari */
+  .custome_scroll_y::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .custome_scroll_y::-webkit-scrollbar-track {
+    background: var(--scrollbar-black-color);
+    border-radius: 7px;
+  }
+
+  .custome_scroll_y::-webkit-scrollbar-thumb {
+    background-color: var();
+    border-radius: 14px;
+    border: 3px solid var(--scrollbar-white-color);
+  }
+
+  .custome_scroll_y::-webkit-scrollbar-thumb:hover {
+    border: 3px solid var(--scrollbar-white-color);
+  }
+
+  /* Firefox */
+  .custome_scroll_x {
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar-black-color);
+  }
+
+  /* Chrome, Edge, and Safari */
+  .custome_scroll_x::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  .custome_scroll_x::-webkit-scrollbar-track {
+    background: var(--scrollbar-black-color);
+    border-radius: 7px;
+  }
+
+  .custome_scroll_x::-webkit-scrollbar-thumb {
+    background-color: var();
+    border-radius: 14px;
+    border: 3px solid var(--scrollbar-white-color);
+  }
+
+  .custome_scroll_x::-webkit-scrollbar-thumb:hover {
+    border: 3px solid var(--scrollbar-white-color);
+  }
+
+  .dark {
+    --background: 219.13, 40.35%, 11.18%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+@layer base {
+  html {
+    @apply text-[.85rem];
+  }
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  button {
+    @apply outline-none;
+  }
+}
+
+.btn-primary-mint {
+  @apply min-w-28 rounded-md bg-rs-v2-mint font-semibold text-rs-v2-black-text-button transition-opacity;
+}
+.btn-mint-green {
+  @apply min-w-28 rounded-md bg-rs-v2-pie-mint-green font-semibold text-white transition-opacity;
+}
+.btn-outline-mint {
+  @apply min-w-28 rounded-md border border-rs-v2-mint bg-[#61F9F033] font-semibold text-rs-v2-mint transition-opacity;
+}
+.btn-secondary-midnight-blue {
+  @apply min-w-28 rounded-md bg-rs-v2-midnight-blue font-semibold text-white transition-opacity;
+}
+.btn-secondary-navy-blue {
+  @apply min-w-28 rounded-md bg-rs-v2-navy-blue font-semibold text-white transition-opacity;
+}
+.btn-secondary-navy-blue-60 {
+  @apply min-w-28 rounded-md bg-rs-v2-navy-blue-60% font-semibold text-white transition-opacity;
+}
+.btn-primary-green {
+  @apply min-w-28 rounded-md bg-rs-v2-green-2 font-semibold text-white transition-opacity;
+}
+.btn-primary-danger {
+  @apply min-w-28 rounded-md bg-rs-v2-red font-semibold text-white transition-opacity;
+}
+.btn-terinary-gray {
+  @apply min-w-28 rounded-md bg-rs-neutral-dark-platinum font-semibold text-white transition-opacity;
+}
+.btn-warning {
+  @apply min-w-28 rounded-md bg-rs-alert-yellow font-semibold text-white transition-opacity;
+}
+.toast-top-right {
+  @apply fixed right-0 top-0 flex md:right-4 md:top-4 md:max-w-[320px];
+}
+
+@layer utilities {
+  .hover-btn-primary-danger {
+    @apply bg-rs-v2-red opacity-75;
+  }
+  .hover-btn-primary-green {
+    @apply bg-rs-v2-green-2 opacity-75;
+  }
+  .hover-btn-secondary-navy-blue-60 {
+    @apply bg-rs-v2-navy-blue-60% opacity-75;
+  }
+  .hover-btn-mint-green {
+    @apply bg-rs-v2-pie-mint-green opacity-75;
+  }
+  .hover-btn-secondary-midnight-blue {
+    @apply bg-rs-v2-midnight-blue opacity-75;
+  }
+  .hover-btn-secondary-navy-blue {
+    @apply bg-rs-v2-navy-blue opacity-75;
+  }
+  .hover-btn-terinary-gray {
+    @apply bg-rs-neutral-dark-platinum opacity-75;
+  }
+  .hover-btn-primary-mint {
+    @apply bg-rs-v2-mint opacity-75;
+  }
+  .hover-btn-warning {
+    @apply bg-rs-alert-yellow opacity-75;
+  }
+  .hover-btn-outline-mint {
+    @apply bg-[#61F9F033] opacity-75;
+  }
+  .disabled-btn-disabled-slate-blue {
+    @apply bg-rs-v2-slate-blue-60%  text-rs-neutral-chromium;
+  }
+  .disabled-btn-disabled-neutral-dark-platinum {
+    @apply bg-rs-neutral-dark-platinum text-rs-neutral-chromium;
+  }
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-rs-light-grey-color);
+  border: 3px solid transparent;
+  border-radius: 16px;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scrollbar-rs-grey-color);
+}
+
+.os-theme-rs {
+  --os-size: 6px;
+  --os-padding-perpendicular: 0;
+  --os-padding-axis: 0;
+  --os-track-border-radius: 0;
+  --os-track-bg: none;
+  --os-track-bg-hover: none;
+  --os-track-bg-active: none;
+  --os-track-border: none;
+  --os-track-border-hover: none;
+  --os-track-border-active: none;
+  --os-handle-border-radius: 16px;
+  --os-handle-bg: var(--scrollbar-rs-light-grey-color);
+  --os-handle-bg-hover: var(--scrollbar-rs-grey-color);
+  --os-handle-bg-active: var(--scrollbar-rs-grey-color);
+  --os-handle-border: none;
+  --os-handle-border-hover: none;
+  --os-handle-border-active: none;
+  --os-handle-min-size: 33px;
+  --os-handle-max-size: none;
+  --os-handle-perpendicular-size: 100%;
+  --os-handle-perpendicular-size-hover: 100%;
+  --os-handle-perpendicular-size-active: 100%;
+  --os-handle-interactive-area-offset: 0;
+}
+
+/* Autofill input color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: #fff;
+}
+
+/* Remove input number spinner */
+@layer base {
+  input[type='number']::-webkit-outer-spin-button,
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number'] {
+    -webkit-appearance: none;
+    margin: 0;
+    -moz-appearance: textfield !important;
+  }
+}
+
+/* Remove input search clear button */
+@layer base {
+  input[type='search']::-webkit-search-decoration,
+  input[type='search']::-webkit-search-cancel-button,
+  input[type='search']::-webkit-search-results-button,
+  input[type='search']::-webkit-search-results-decoration {
+    display: none;
+  }
+}
+
+/* Report PDF */
+
+@media print {
+  .page-break-before {
+    page-break-before: always;
+  }
+  .page-break-after {
+    page-break-after: always;
+  }
+  .avoid-break {
+    page-break-inside: avoid;
+  }
+  .clear-page-break {
+    page-break-before: always;
+  }
+}
+
+.chart-container {
+  height: 30vh;
+}
+
+@media (min-width: 768px) {
+  .chart-container {
+    height: 35vh;
+  }
+}

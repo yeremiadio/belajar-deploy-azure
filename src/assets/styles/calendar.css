@@ -1,0 +1,145 @@
+.rbc-event {
+  @apply rounded-full;
+}
+.rbc-event-label {
+  @apply hidden;
+}
+
+/* Month */
+.rbc-month-view {
+  @apply rounded-lg border-rs-v2-gunmetal-blue;
+}
+
+.rbc-header {
+  @apply !border-b-rs-v2-gunmetal-blue !border-l-rs-v2-gunmetal-blue bg-rs-v2-slate-blue px-6 py-4 text-left;
+}
+
+.rbc-header:first-child {
+  @apply rounded-tl-lg;
+}
+
+.rbc-header:last-child {
+  @apply rounded-tr-lg;
+}
+
+.rbc-month-row {
+  @apply !border-t-rs-v2-gunmetal-blue bg-rs-v2-dark-grey;
+}
+
+.rbc-day-bg {
+  @apply !border-l-rs-v2-gunmetal-blue;
+}
+
+.rbc-off-range-bg {
+  @apply bg-rs-v2-dark-grey;
+}
+
+.rbc-date-cell {
+  @apply px-6 py-4 text-left;
+}
+
+.rbc-current {
+  @apply border-r-rs-v2-gunmetal-blue bg-rs-v2-dark-grey pb-0.5 pt-2.5;
+}
+
+.rbc-date-cell.rbc-now.rbc-current .rbc-button-link {
+  @apply h-[32px] w-[32px] rounded-full bg-rs-v2-mint text-rs-v2-black-text-button;
+}
+
+.rbc-today {
+  @apply bg-rs-v2-dark-grey;
+}
+
+.rbc-month-row:last-child .rbc-row-content {
+  @apply rounded-b-lg;
+}
+
+.rbc-month-row:last-child {
+  @apply rounded-b-lg;
+}
+
+/* wEEK */
+.rbc-allday-cell {
+  @apply hidden;
+}
+
+.rbc-time-content {
+  @apply rounded-b-lg border-t-0 border-rs-v2-gunmetal-blue bg-rs-v2-dark-grey;
+}
+
+.rbc-time-header-gutter {
+  @apply hidden;
+}
+
+.rbc-time-gutter {
+  @apply hidden;
+}
+
+.rbc-timeslot-group {
+  @apply border-none;
+}
+
+.rbc-time-view {
+  @apply rounded-lg border-l-0 border-t-0 border-rs-v2-gunmetal-blue;
+}
+
+.rbc-time-view .rbc-row {
+  @apply rounded-t-lg border-b border-t border-rs-v2-gunmetal-blue;
+}
+
+.rbc-time-view .rbc-header {
+  @apply border-b-0;
+}
+
+.rbc-time-view .rbc-events-container {
+  @apply border-r-rs-v2-gunmetal-blue bg-rs-v2-dark-grey;
+}
+
+.rbc-time-view .rbc-day-slot .rbc-time-slot {
+  @apply border-t-0;
+}
+
+.rbc-time-view .rbc-header.rbc-today {
+  @apply !border-b-rs-v2-gunmetal-blue !border-l-rs-v2-gunmetal-blue bg-rs-v2-slate-blue;
+}
+
+.rbc-time-content > * + * > * {
+  @apply border-rs-v2-gunmetal-blue;
+}
+
+.rbc-time-header-content {
+  @apply rounded-tl-lg border-l-rs-v2-gunmetal-blue;
+}
+
+.rbc-time-column .rbc-timeslot-group {
+  @apply rounded-lg;
+}
+
+.rbc-date-cell.rbc-now.rbc-current {
+  @apply w-[14%] flex-none;
+}
+
+.rbc-show-more {
+  @apply text-rs-v2-gunmetal-blue hover:text-rs-v2-gunmetal-blue hover:opacity-75 focus:text-rs-v2-gunmetal-blue focus:opacity-75 !bg-transparent;
+}
+
+/* See more table */
+.rbc-overlay {
+  @apply rounded-lg border-rs-v2-thunder-blue bg-rs-v2-navy-blue overflow-y-auto max-h-80;
+}
+
+.rbc-overlay-header {
+  @apply border-b-transparent;
+}
+
+.rbc-overlay > * + * {
+  @apply rounded-md;
+}
+
+.rdp-caption_start {
+  @apply border-r-rs-v2-gunmetal-blue bg-rs-v2-dark-grey;
+}
+
+.rdp-months {
+  @apply h-full;
+}

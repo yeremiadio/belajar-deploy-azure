@@ -1,0 +1,45 @@
+/**
+ * Sensor data retrieved from /api/sensor/find
+ */
+export enum ESensor {
+  smke = 'Smoke',
+  mthn = 'Methane',
+  co = 'Carbon Monoxide',
+  lpg = 'LPG',
+  prpn = 'Propane',
+  co2 = 'CO2',
+  rgauge = 'Rain Gauge',
+  flwrt = 'Flow Rate',
+  dist = 'Distance',
+  tagn = 'TAG ID Number',
+  wfwl = 'Water Flow',
+  wusg = 'Water Usage',
+  freq = 'Frequency',
+  pfac = 'Power Factor',
+  edel = 'Energy Delivered',
+  vavg = 'Voltage',
+  iavg = 'Current',
+  stdd = 'TDD',
+  thdv = 'THD Voltage Avg',
+  thdc = 'THD Current Avg',
+  cntr = 'Counter',
+  rpow = 'Reactive Power',
+  vnba = 'A-N',
+  vnbc = 'C-N',
+  cnba = 'A',
+  cnbc = 'C',
+  cnbw = 'Worst Current Unbalanced',
+  vnbw = 'Worst Voltage Unbalanced',
+  vnbb = 'B-N',
+  cnbb = 'B',
+  appo = 'Apparent Power',
+  acpo = 'Active Power',
+  temp = 'Temperature',
+  hmdt = 'Humidity',
+  apre = 'Air Pressure',
+  wlvl = 'Water Level',
+  weight = 'Weight',
+  airq = 'Air Quality'
+}
+
+export type TAvailableSensorCode = keyof typeof ESensor;

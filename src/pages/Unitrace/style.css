@@ -1,0 +1,16 @@
+.border-rs-linear-blue {
+  border: 2px solid;
+  background: #2c394aad;
+  border-image: linear-gradient(180deg, #3a7bd5 0%, #00d2ff 100%);
+}
+
+.wrap-border-rs-linear-blue {
+  background: #2c394aad;
+  overflow: hidden;
+  background-image: linear-gradient(#111928, #111928),
+    linear-gradient(180deg, #3a7bd5, #00d2ff);
+  background-clip: padding-box, border-box;
+  background-origin: border-box;
+  border: 2px solid transparent;
+  border-radius: 8px;
+}

@@ -1,0 +1,96 @@
+.rc-select-multiple .rc-select-selector .rc-select-selection-item {
+  @apply !rounded-[50px] !bg-rs-alert-green-30% !p-0 text-[14px];
+}
+
+.rc-select-selection-item-content {
+  @apply px-[11px] py-[2px] text-rs-alert-green;
+}
+
+.rc-select-selection-item-remove-icon {
+  @apply text-[14px] text-rs-alert-green;
+}
+
+.rc-select-multiple .rc-select-selector .rc-select-selection-overflow-item {
+  @apply mr-[5px];
+}
+
+.rc-select--navy-blue .rc-select-selector {
+  @apply !border-rs-v2-thunder-blue bg-rs-v2-navy-blue;
+}
+
+.rc-select .rc-select-selection-placeholder {
+  @apply !text-rs-neutral-dark-platinum !opacity-100;
+}
+
+.rc-select-show-arrow .rc-select-selector {
+  @apply !min-h-[40px] rounded-[4px] !border-rs-v2-galaxy-blue bg-rs-v2-galaxy-blue !px-[16px] !py-[10px];
+}
+
+.rc-select-focused .rc-select-selector {
+  @apply !border-rs-v2-mint;
+}
+
+.rc-select-selector:hover {
+  @apply !border-rs-v2-mint;
+}
+
+.rc-select-selector:focus {
+  @apply !border-rs-v2-mint;
+}
+
+.rc-select-selector:active {
+  @apply !border-rs-v2-mint;
+}
+
+.rc-select-show-arrow .rc-select-arrow {
+  @apply !top-[2px] px-[16px] py-[10px];
+}
+
+.rc-select-multiple .rc-select-item-option .rc-select-item-option-state {
+  @apply left-[15px] top-[10px];
+}
+
+.rc-select-multiple .rc-select-item {
+  @apply px-[40px] py-[4px];
+}
+
+.rc-select-item-option-active {
+  @apply !cursor-pointer !bg-transparent text-rs-v2-mint;
+}
+
+.rc-select-single .rc-select-selector .rc-select-selection-item,
+.rc-select-single .rc-select-selector .rc-select-selection-placeholder {
+  @apply left-[15px] top-[10px];
+}
+
+.rc-select-multiple .rc-select-selector .rc-select-selection-search-input {
+  @apply !bg-transparent;
+}
+
+.rc-select-single .rc-select-selector .rc-select-selection-search-input {
+  @apply !bg-transparent;
+}
+
+.rc-select-disabled .rc-select-selector {
+  @apply !border-rs-v2-slate-blue !bg-rs-v2-slate-blue !opacity-100;
+}
+
+.rc-select-disabled .rc-select-selector {
+  @apply !pointer-events-none !text-rs-v2-gunmetal-blue;
+}
+
+.rc-select-disabled .rc-select-arrow {
+  @apply !text-rs-v2-gunmetal-blue;
+}
+
+.rc-select-allow-clear .rc-select-clear {
+  @apply absolute right-0 top-[9px] h-5 w-5;
+}
+
+.rc-select--navy-blue .rc-select-selector {
+  @apply !border-rs-v2-thunder-blue bg-rs-v2-navy-blue;
+}
+
+.rc-select-dropdown div {
+  @apply !text-[14px];
+}
